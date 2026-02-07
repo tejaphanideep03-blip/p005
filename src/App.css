@@ -1,76 +1,81 @@
-.app {
+.app{
     height: 100%;
-    background: linear-gradient(to bottom, #a1cbe6, #ffffff);
+    background: linear-gradient(to bottom, #a1cbe6, #fff);
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.login-container {
-    background: #ffffff;
+.app .login-container, 
+.app .signup-container{
+    background: #fff;
+    border-radius: 10px;
     width: 400px;
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    height: auto;
+    padding: 20px;
+    box-shadow: 0 10px 20px #ccc;
+
     display: flex;
     flex-direction: column;
 }
-.login-container h2 {
+.app .login-container h2,
+.app .signup-container h2{
     text-align: center;
-    margin-bottom: 25px;
-    color: #000;
+    color: black;
 }
-.input-group {
+.app .login-container .input-group,
+.app .signup-container .input-group{
+    width: 100%;
+    padding-bottom: 20px;
     position: relative;
-    width: 100%;
-    margin-bottom: 15px;
 }
-.input-group input {
+.app .login-container .input-group img,
+.app .signup-container .input-group img{
+  height: 16px;
+  position: absolute;
+  top: 15px;
+}
+.app .login-container .input-group .left-icon,
+.app .signup-container .input-group .left-icon {
+  left: 5px;
+}
+.app .login-container .input-group input,
+.app .signup-container .input-group input{
     width: 100%;
     height: 45px;
-    padding: 0 40px;
     border: none;
-    border-radius: 10px;
     background: #f2f2f2;
-    box-sizing: border-box;
-    outline: none;
-    font-size: 14px;
-}
-.left-icon {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 16px;
-}
-
-.right-icon {
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 16px;
-    cursor: pointer;
-}
-
-.forgot {
-    width: 100%;
-    text-align: right;
-    font-size: 12px;
-    color: #666;
-    margin-bottom: 20px;
-}
-.forgot span {
-    font-weight: bold;
-    cursor: pointer;
-}
-.btn {
-    width: 100%;
-    height: 45px;
-    border: none;
+    padding: 0px 25px;
     border-radius: 10px;
-    background: #000;
-    color: #fff;
-    font-size: 16px;
+    box-sizing: border-box;
+}
+.app .login-container .input-group .right-icon,
+.app .signup-container .input-group .right-icon {
+  right: 5px;
+  cursor: pointer;;
+}
+.app .login-container .forgot-password{
+    text-align: right;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.app .login-container .forgot-password label, 
+.app .login-container p label,
+.app .signup-container p label{
     cursor: pointer;
+    font-weight: bold;
+}
+.app .login-container button,
+.app .signup-container button{
+  border: none;
+  height: 40px;
+  background-color: rgb(27, 22, 16);
+  color: white;
+  border-radius: 10px;
+  transform: translateY(2px);
+}
+.app .login-container button:hover,
+.app .signup-container button:hover{
+  background-color: #3c2c2c;
+  cursor: pointer;
 }
