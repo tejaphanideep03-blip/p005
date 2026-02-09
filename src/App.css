@@ -6,12 +6,12 @@
     justify-content: center;
     align-items: center;
 }
-.app .login-container, 
-.app .signup-container{
+.app .login-container,
+.app .signup-container
+{
     background: #fff;
     border-radius: 10px;
     width: 400px;
-    height: auto;
     padding: 20px;
     box-shadow: 0 10px 20px #ccc;
 
@@ -19,63 +19,75 @@
     flex-direction: column;
 }
 .app .login-container h2,
-.app .signup-container h2{
+.app .signup-container h2
+{
     text-align: center;
-    color: black;
 }
 .app .login-container .input-group,
-.app .signup-container .input-group{
+.app .signup-container .input-group
+{
     width: 100%;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     position: relative;
 }
 .app .login-container .input-group img,
-.app .signup-container .input-group img{
-  height: 16px;
-  position: absolute;
-  top: 15px;
+.app .signup-container .input-group img
+{
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .app .login-container .input-group .left-icon,
-.app .signup-container .input-group .left-icon {
-  left: 5px;
+.app .signup-container .input-group .left-icon
+{
+    left: 5px;
+}
+.app .login-container .input-group .right-icon,
+.app .signup-container .input-group .right-icon
+{
+    right: 5px;
+    cursor: pointer;
 }
 .app .login-container .input-group input,
-.app .signup-container .input-group input{
+.app .signup-container .input-group input
+{
     width: 100%;
     height: 45px;
     border: none;
     background: #f2f2f2;
-    padding: 0px 25px;
+    padding: 0 25px;
     border-radius: 10px;
     box-sizing: border-box;
 }
-.app .login-container .input-group .right-icon,
-.app .signup-container .input-group .right-icon {
-  right: 5px;
-  cursor: pointer;;
+.app .login-container .input-group .error,
+.app .signup-container .input-group .error{
+    border: 1px solid red;
 }
 .app .login-container .forgot-password{
-    text-align: right;
     width: 100%;
+    text-align: right;
     padding-bottom: 20px;
 }
-.app .login-container .forgot-password label, 
+.app .login-container .forgot-password label,
 .app .login-container p label,
-.app .signup-container p label{
+.app .signup-container p label
+{
     cursor: pointer;
     font-weight: bold;
 }
 .app .login-container button,
-.app .signup-container button{
-  border: none;
-  height: 40px;
-  background-color: rgb(27, 22, 16);
-  color: white;
-  border-radius: 10px;
-  transform: translateY(2px);
+.app .signup-container button
+{
+    border: none;
+    height: 40px;
+    background: #1c1c1e;
+    color: white;
+    border-radius: 10px;
 }
 .app .login-container button:hover,
-.app .signup-container button:hover{
-  background-color: #3c2c2c;
-  cursor: pointer;
+.app .signup-container button:hover
+{
+    cursor: pointer;
+    background: #363636;
 }
