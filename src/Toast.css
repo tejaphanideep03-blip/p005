@@ -54,3 +54,12 @@
     80%{transform: translateX(10%);}
     100%{transform: translateX(10px);}
 }
+.toast .success::before{
+    background: green;
+}
+.toast .error::before{
+    background: red;
+}
+.toast .warning::before{
+    background: goldenrod;
+}

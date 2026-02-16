@@ -30,7 +30,7 @@ const App = () => {
       if(validatesignin()) 
         // Perform sign-in logic here
       return;
-      setToast({type: "Success", message : "From Sign in", id:Date.now()});
+      setToast({type: "success", message : "From Sign in", id:Date.now()});
     }
     function signUp() {
       if(validatesignup()) 
